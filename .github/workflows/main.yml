@@ -1,4 +1,4 @@
-name: This_Shit_Again
+name: This_Shit_Once_More
 
 on: workflow_dispatch
 
@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Download Ngrok & NSSM
       run: |
-        Invoke-WebRequest https://github.com/TheGr8estTim/WIN10/raw/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/LW-BACKUP/W10_RDP/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/TheGr8estTim/W10/master/ngrok.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/TheGr8estTim/W10/master/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
